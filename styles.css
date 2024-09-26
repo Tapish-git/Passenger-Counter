@@ -1,0 +1,109 @@
+/* Basic reset and layout */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Counter section container */
+.counter-section {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Counter display */
+#counter-value {
+  font-size: 64px;
+  color: #4caf50;
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#increment-btn {
+  background-color: #4caf50;
+}
+
+#increment-btn:hover {
+  background-color: #45a049;
+}
+
+#decrement-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+#decrement-btn:hover {
+  background-color: #e53935;
+}
+
+#reset-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+#reset-btn:hover {
+  background-color: #fb8c00;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 400px) {
+  .counter-section {
+    width: 90%;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  #counter-value {
+    font-size: 48px;
+  }
+  button {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

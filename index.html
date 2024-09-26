@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People Counter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="auth-section">
+      <h1>Welcome to the Authentication</h1>
+      <form id="auth-form" action="">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login/Register</button>
+      </form>
+      <br />
+      <p id="auth-message"></p>
+    </div>
+
+    <div class="counter-section" style="display: none">
+      <h1>People Counter</h1>
+      <p><span id="counter-value">0</span></p>
+      <button id="increment-btn">INCREMENT</button>
+      <button id="decrement-btn">DECREMENT</button>
+      <button id="reset-btn">RESET</button>
+      <button id="logout-btn">Logout</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
