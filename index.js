@@ -172,29 +172,6 @@ document.getElementById('logout-btn').addEventListener('click', function () {
     window.location.href = 'index.html';    //Redirect to login page     
 });
 
-//Increment function
-// function increment(){
-//     count++;
-//     document.getElementById('counter-value').innerHTML = count;
-//     saveCounter();    //save the updated count
-// }
-
-// //Decrement function
-// function decrement(){
-//     if(count>0){
-//         count--;
-//     }
-//     document.getElementById('counter-value').innerHTML = count;
-//     saveCounter();
-// }
-
-// //Reset Function
-// function reset(){
-//     count = 0;
-//     document.getElementById('counter-value').innerHTML = count;
-//     saveCounter();
-// }
-
 // function saveCount(){
 //     localStorage.setItem("count", count);   //store the count in localStorage
 // }
